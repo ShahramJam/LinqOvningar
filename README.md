@@ -1,37 +1,55 @@
 # LinqOvningar
- 
-This project uses a simple `Student` model and a list of sample students to showcase how to filter, sort, count, group, aggregate, and transform data using LINQ.
 
-## Features
+Ett enkelt C#-projekt för att öva på LINQ med en lista av studenter.
 
-The sample code demonstrates:
+## Syfte
 
-- `Where` for filtering
-- `Select` for projection
-- `OrderBy` for sorting
-- `Count` for counting items
-- `Take` for selecting a limited number of elements
-- `Distinct` for unique values
-- `Min`, `Max`, `Sum`, and `Average` for aggregations
-- `Any` and `All` for condition checks
-- `FirstOrDefault`, `Last`, and `SingleOrDefault`
-- `GroupBy` for grouping data
-- `Reverse` for reversing order
-- `ToList()` and `ToArray()` conversions
+Projektet visar hur man använder vanliga LINQ-metoder för att:
 
-## Project structure
+- filtrera data med `Where`
+- välja data med `Select`
+- sortera data med `OrderBy` och `OrderByDescending`
+- räkna poster med `Count`
+- ta ut ett visst antal element med `Take`
+- hitta unika värden med `Distinct`
+- kontrollera villkor med `Any` och `All`
+- hämta specifika element med `FirstOrDefault`, `Last` och `Single`
+- gruppera data med `GroupBy`
+- summera och beräkna värden med `Sum`, `Average`, `Min` och `Max`
 
-- `Program.cs` – contains the LINQ examples and demo output
-- `LinqDemo.csproj` – .NET project configuration
-- `LinqDemo.slnx` – solution file
+## Struktur
 
-## Requirements
+- `LinqOvningar/Program.cs` – huvudprogram med exempeldata och LINQ-övningar
+- `LinqOvningar/LinqOvningar.csproj` – .NET projektfil
+- `LinqOvningar.slnx` – lösningsfil
 
-- .NET 10 SDK or a compatible .NET version for the project target
+## Krav
 
-## Run the project
+- .NET SDK 10.0 eller senare
 
-From the repository root:
+## Så kör du projektet
+
+Från projektets rotmapp:
 
 ```bash
-dotnet run
+dotnet run --project LinqOvningar/LinqOvningar.csproj
+```
+
+## Exempel på innehåll
+
+Programmet innehåller exempel för:
+
+- studenter äldre än 20
+- studenter med mer än 80 poäng
+- sortering efter ålder och poäng
+- antal studenter totalt och i klass A
+- unika klassnamn och åldrar
+- kontroll om någon student har 100 poäng
+- första student i klass B
+- sista student i listan
+- gruppindelning per klass
+- totalpoäng, medelpoäng, lägsta och högsta poäng
+
+## Licens
+
+Projektet är avsett för övnings- och lärandeformål.
